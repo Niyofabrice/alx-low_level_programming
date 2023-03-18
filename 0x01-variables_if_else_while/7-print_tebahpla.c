@@ -5,10 +5,11 @@
  */
 int main(void)
 {
-char ch;
-for (ch = 'z'; ch <= 'a'; ch--)
+int ch = 122;
+while (ch >= 97)
 {
 putchar(ch);
+ch--;
 }
 putchar('\n');
 return (0);
