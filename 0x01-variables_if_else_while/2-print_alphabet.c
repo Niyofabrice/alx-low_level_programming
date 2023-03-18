@@ -10,6 +10,6 @@ for (ch = 'a' ; ch <= 'z'; ch++)
 {
 putchar(ch);
 }
-putchar("\n");
+putchar(" ");
 return (0);
 }
