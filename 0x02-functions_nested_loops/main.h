@@ -1,4 +1,4 @@
-#include "_putchar"
+#include "_putchar.c"
 char output()
 {
 printf("_putchar\n");
