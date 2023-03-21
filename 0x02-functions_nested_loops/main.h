@@ -12,5 +12,4 @@ for(ch = 97; ch <= 122; ch++)
 {
 putchar(ch + '0');
 }
-return (0);
 }
