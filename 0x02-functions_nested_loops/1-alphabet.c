@@ -1,12 +1,14 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
  * main - program that prints the alphabets
  * Return: 0 (Success);
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return(0);
+char ch;
+for(ch = 97; ch <= 122; ch++)
+{
+_putchar(ch);
+}
+_putchar('\n');
 }
