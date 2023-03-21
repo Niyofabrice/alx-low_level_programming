@@ -3,8 +3,9 @@
  * main - a progam that prints '_putchar', followed by a new line.
  * Return: 0 (Success);
  */
+#include "main.h"
 int main(void)
 {
-printf("_putchar\n");
+output();
 return (0);
 }
