@@ -13,6 +13,7 @@ while (*s != '\0')
 i++;
 s++;
 }
+s--;
 for (j = i; j > 0; j++)
 {
 _putchar(*s);
