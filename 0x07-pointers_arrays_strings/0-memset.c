@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _memset - function that the memory with a constant byte
  * @s: the pointer
@@ -8,10 +9,11 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-char *s[n];
+s = malloc(n*sizeof(char));
 for (int i; i <= n; i++)
 {
-*s[i] = b;
+s[i] = b;
 }
+free(s);
 return (s);
 }
