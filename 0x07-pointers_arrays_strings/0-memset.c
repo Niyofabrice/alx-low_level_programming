@@ -9,7 +9,7 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-s = malloc(n*sizeof(char));
+s = malloc(n * sizeof(char));
 for (int i; i <= n; i++)
 {
 s[i] = b;
