@@ -16,5 +16,5 @@ if (i < l)
 printf("%d", s[i]);
 }
 i++;
-printf('\n');
+_putchar('\n');
 }
