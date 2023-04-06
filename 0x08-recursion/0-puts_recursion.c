@@ -13,8 +13,8 @@ int i = 1;
 l = strlen(s);
 if (i < l)
 {
-printf("%d", s[i]);
-_puts_recursion(s);
+printf("%c", s[i]);
+_puts_recursion(s + 1);
 }
 i++;
 _putchar('\n');
