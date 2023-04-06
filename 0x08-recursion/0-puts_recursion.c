@@ -14,6 +14,7 @@ l = strlen(s);
 if (i < l)
 {
 printf("%c", s[i]);
+printf('\n');
 _puts_recursion(s + 1);
 }
 i++;
