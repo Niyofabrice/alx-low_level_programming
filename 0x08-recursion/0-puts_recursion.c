@@ -8,17 +8,12 @@
  */
 void _puts_recursion(char *s)
 {
-int l;
 int i = 0;
-l = strlen(s);
-if (i < l)
-{
-printf("%c", s[i]);
-_puts_recursion(s + 1);
-}
 if (*s == '\0')
 {
 _putchar('\n');
 return;
 }
+printf("%c", s[i]);
+_puts_recursion(s + 1);
 }
