@@ -12,8 +12,9 @@ int l;
 int i = 0;
 l = strlen(s);
 if (i < l)
+{
 printf("%d", s[i]);
 }
 i++;
-printf("\n");
+printf('\n');
 }
