@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	y = ((n - 1) + (n / (n - 1)) / 2;
+	y = ((n - 1) + (n / (n - 1)) / 2);
 	if ((n - 1) - y < e && y - (n - 1) < e)
 	{
 		return (y);
