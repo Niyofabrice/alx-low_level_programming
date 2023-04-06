@@ -17,5 +17,4 @@ printf("%c", s[i]);
 _puts_recursion(s + 1);
 }
 i++;
-_putchar('\n');
 }
