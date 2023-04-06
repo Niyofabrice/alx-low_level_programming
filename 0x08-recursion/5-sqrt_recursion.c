@@ -6,13 +6,13 @@
  */
 int _sqrt_recursion(int n)
 {
+	int y;
+        int e = 0.00001;
+
 	if (n < 0)
 	{
 		return (-1);
 	}
-	int y;
-	int e = 0.00001;
-
 	y = ((n - 1) + (n / (n - 1)) / 2;
 	if ((n - 1) - y < e && y - (n - 1) < e)
 	{
