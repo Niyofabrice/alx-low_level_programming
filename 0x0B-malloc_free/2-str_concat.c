@@ -25,11 +25,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		i++;
 	}
-	x = malloc(sizeof(char) * (i + 1));
+	x = malloc(sizeof(char) * i);
 	if (x == NULL)
 	{
 		return (NULL);
 	}
+	i = j = 0;
 	while (s1[i] != 0)
 	{
 		x[i] = s1[i];
