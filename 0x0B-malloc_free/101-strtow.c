@@ -58,9 +58,9 @@ char **strtow(char *str)
 			{
 				end = i, tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
-				{
+
 					return (NULL);
-				}
+
 				while (start < end)
 				{
 					*tmp++ = str[start++];
@@ -69,9 +69,10 @@ char **strtow(char *str)
 			}
 		}
 		else if (c++ == 0)
-		{
+		
 			start = i;
-		}
+		
 	}
-	matrix[k] = NULL, return (matrix);
+	matrix[k] = NULL;
+	return (matrix);
 }
