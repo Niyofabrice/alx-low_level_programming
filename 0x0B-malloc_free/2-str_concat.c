@@ -12,7 +12,6 @@ char *str_concat(char *s1, char *s2)
 	char *x;
 	int i = 0;
 	int j = 0;
-	
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -43,4 +42,4 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	return (x);
-}	
+}
