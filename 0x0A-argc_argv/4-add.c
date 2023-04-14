@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 	while (i < argc)
 	{
-		if (sizeof(argv[i] != 4)
+		if (sizeof(argv[i]) != 4)
 		{
 			printf("Error\n");
 			return (1);
