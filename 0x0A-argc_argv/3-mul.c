@@ -54,22 +54,16 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int mult = 0;
-	int num1;
-	int num2;
+	int result, num1, num2;
 
-	num1 = _atoi(argv[1]);
-	num2 = _atoi(argv[2])
-
-	if (argc !< 3 || argc !> 3)
-	{
-		mult = _atoi(argv[1]) * _atoi(argv[2]);
-		printf("%d\n", mult);
-	}
-	else
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
+	printf("%d\n", result);
 	return (0);
 }
