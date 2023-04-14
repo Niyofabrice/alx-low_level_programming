@@ -6,8 +6,9 @@
  * @argv: is a vector that strores the string value of arguments passed
  * Return: 0(Success)
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
+	(void) argc;
 	print("%s\n", *argv);
 	return (0);
 }
