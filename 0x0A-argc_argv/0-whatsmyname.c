@@ -6,9 +6,8 @@
  * @argv: is a vector that strores the string value of arguments passed
  * Return: the name of the file
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	(void) argc;
 	print("%s\n", argv[0]);
 	return (0);
 }
