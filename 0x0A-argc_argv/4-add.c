@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 1;
 	int j;
 	int add = 0;
 
@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
 		}
 		i++;
 	}
-	for (j = 0; j < argc; j++)
+	for (j = 1; j < argc; j++)
 	{
-		add += argv[j];
+		add = add + argv[j];
 	}
 	printf("%d\n", add);
 	return (0);
