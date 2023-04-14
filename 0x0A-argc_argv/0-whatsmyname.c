@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - program that prints its name followed by a new line
- * @argc: it counts the number of arguments passed in the terminal
- * @argv: is a vector that strores the string value of arguments passed
- * Return: 0(Success)
+ * main - prints the name of the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	(void) argc;
-	print("%s\n", *argv);
+	printf("%s\n", *argv);
 	return (0);
 }
