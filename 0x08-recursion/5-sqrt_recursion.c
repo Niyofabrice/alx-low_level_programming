@@ -17,7 +17,8 @@ int _sqrt(int n)
 	{
 		return (x);
 	}
-	else{
+	else
+	{
 		x++;
 		return (_sqrt(n));
 	}
