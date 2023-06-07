@@ -46,7 +46,7 @@ int _strlen_recursion(char *s)
 
 int palindromehelper(char *s, int count, int length)
 {
-	if (*(s+1) != *(s+length-1))
+	if (*(s + 1) != *(s + (length - 1)))
 	{
 	return (0);
 	}
@@ -54,5 +54,5 @@ int palindromehelper(char *s, int count, int length)
 	{
 	return (1);
 	}
-	return (palindromehelper(s, count+1, length-1));
+	return (palindromehelper(s, count + 1, length - 1));
 }
