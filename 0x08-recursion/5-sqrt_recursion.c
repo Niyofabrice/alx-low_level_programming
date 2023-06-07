@@ -10,7 +10,6 @@ int _sqrt(int n)
 {
 	_sqrthelper(n, 0);
 }
-
 /**
  * _sqrthelper - function that helps the square root function
  * @n: the number its self
