@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt - function that returns the natural square root of a number
+ * _sqrt_recursion - function that returns the natural square root of a number
  * @n: the number that is squared
  * Return: (-1)if its not a perfect square or return the answer
  */
 
-int _sqrt(int n)
+int _sqrt_recursion(int n)
 {
 	return (_sqrthelper(n, 0));
 }
