@@ -1,13 +1,24 @@
 #include "main.h"
 
-/** _sqrt - function that returns the natural square root of a number
+/**
+ * _sqrt - function that returns the natural square root of a number
  * @n: the number that is squared
  * Return: (-1)if its not a perfect square or return the answer
  */
 
-int x = 1;
-
 int _sqrt(int n)
+{
+	_sqrthelper(n, 0);
+}
+
+/**
+ * _sqrthelper - function that helps the square root function
+ * @n: the number its self
+ * @x: the iterator
+ * Return: answer
+ */
+
+int _sqrthelper(int n, int x)
 {
 	if (n < 1 || (x * x) > n)
 	{
@@ -20,6 +31,6 @@ int _sqrt(int n)
 	else
 	{
 		x++;
-		return (_sqrt(n));
+		return (_sqrthelper(n, (x + 1)));
 	}
 }
