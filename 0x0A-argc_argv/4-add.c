@@ -4,14 +4,14 @@
 #include <stdlib.h>
 
 /**
- * check - function that checks if there are strings in digits
+ * check_number - function that checks if there are strings in digits
  * @s: pointer to the string
  * Return: (0)
  */
 
-int check(char *s)
+int check_number(char *s)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	while (count < strlen(s))
 	{
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	count = 1;
 	while (count < argc)
 	{
-		if (check(argv[count]))
+		if (check_number(argv[count]))
 		{
 			stringToInteger = atoi(argv[count]);
 			sum += stringToInteger;
