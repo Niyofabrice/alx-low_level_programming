@@ -11,7 +11,9 @@
 
 int check_number(char *s)
 {
-	unsigned int count = 0;
+	unsigned int count;
+
+	count = 0;
 
 	while (count < strlen(s))
 	{
@@ -33,9 +35,10 @@ int check_number(char *s)
 
 int main(int argc, char *argv[])
 {
-	int count, strintToInteger, sum = 0;
+	int count, strintToInteger, sum;
 
 	count = 1;
+	sum = 0;
 	while (count < argc)
 	{
 		if (check_number(argv[count]))
