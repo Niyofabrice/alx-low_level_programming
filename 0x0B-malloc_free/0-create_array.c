@@ -5,7 +5,7 @@
  * create_array - function that creates an array of chars, and initializes it
  * @size: stores the size to be allocated
  * @c: characters to be initialized to
- * Return: (0) or NULL
+ * Return: pointer or NULL
  */
 
 char *create_array(unsigned int size, char c)
@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 
 	ar = malloc(sizeof(char) * size);
-	if (size == 0)
+	if (size == 0 || ar == NULL)
 	{
 		return (NULL);
 	}
