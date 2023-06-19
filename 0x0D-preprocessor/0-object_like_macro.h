@@ -1,0 +1,6 @@
+#ifndef OBJECTLIKEMACRO
+#define OBJECTLIKEMACRO
+
+#define SIZE 1024
+
+#endif
