@@ -10,12 +10,13 @@
 int _strlen(char *s)
 {
 	int i;
-	 i = 0;
-	 while (s[i] != '\0')
-	 {
-		 i++
-	 }
-	 return (i);
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++
+	}
+	return (i);
 }
 
 /**
@@ -78,6 +79,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	_strcpy(dog->name, name);
 	_strcpy(dog->owner, owner);
-	dog-age = age;
+	dog->age = age;
 	return (dog);
 }
