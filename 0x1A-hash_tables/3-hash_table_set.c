@@ -35,16 +35,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 	}
-	hash_node_t *ptr = ht->array[index];
-
-	node = malloc(sizeof(hash_node_t *));
+	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (0);
 	node->key = key;
 	node->value = value_copy;
-	node->next = NULL;
-	while (ptr->next != NULL)
-		ptr = ptr->next;
-	ptr->next = node;
+	node->next = ht->array[index];
+	ht->array[index] = node;
 	return (1);
 }
