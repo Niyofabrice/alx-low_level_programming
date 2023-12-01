@@ -23,7 +23,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 
 	ptr = ht->array[index];
-	while (ptr && ht->array[index])
+	while (ptr && strcmp(ptr->key, key) != 0)
 	{
 		ptr = ptr->next;
 	}
